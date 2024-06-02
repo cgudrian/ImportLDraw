@@ -28,9 +28,9 @@ import bpy
 
 bl_info = {
     "name": "Import LDraw",
-    "description": "Import LDraw models in .mpd .ldr .l3b and .dat formats",
+    "description": "Import LDraw models in .io .mpd .ldr .l3b and .dat formats",
     "author": "Toby Nelson <tobymnelson@gmail.com>",
-    "version": (1, 1, 11),
+    "version": (1, 2,  1),
     "blender": (2, 81, 0),
     "location": "File > Import",
     "warning": "",
@@ -43,7 +43,7 @@ bl_info = {
 def menuImport(self, context):
     """Import menu listing label."""
     self.layout.operator(importldraw.ImportLDrawOps.bl_idname,
-                         text="LDraw (.mpd/.ldr/.l3b/.dat)")
+                         text="LDraw (.io/.mpd/.ldr/.l3b/.dat)")
 
 
 def register():
